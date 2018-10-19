@@ -10,4 +10,8 @@
     <PackageReference Include="MySql.Data" Version="8.0.12" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\layUiAdmin.Common\layUiAdmin.Common.csproj" />
+  </ItemGroup>
+
 </Project>

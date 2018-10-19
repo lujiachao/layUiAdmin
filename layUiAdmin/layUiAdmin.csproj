@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\layUiAdmin.Common\layUiAdmin.Common.csproj" />
     <ProjectReference Include="..\layUiAdmin.SQL\layUiAdmin.SQL.csproj" />
   </ItemGroup>
 

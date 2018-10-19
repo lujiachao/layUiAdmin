@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using layUiAdmin.Argument;
+﻿using layUiAdmin.Controllers.Argument;
 using layUiAdmin.Dispatchs;
-using layUiAdmin.Result;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace layUiAdmin.Controllers
 {
@@ -34,6 +30,14 @@ namespace layUiAdmin.Controllers
         {
             ServerDispatch serverDispatch = new ServerDispatch();
             return Json(await serverDispatch.pageReloadList(arguPage));
+        }
+
+        //修改表格签名字段
+        [HttpPost]
+        public async Task<IActionResult> modifySignColumn(ArguModifySignColumn arguModifySignColumn)
+        {
+            ServerDispatch serverDispatch = new ServerDispatch();
+            return Json(await serverDispatch.ModifySign(arguModifySignColumn));
         }
     }
 }

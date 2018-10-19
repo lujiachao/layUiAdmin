@@ -1,8 +1,8 @@
-﻿using layUiAdmin.Argument;
+﻿using layUiAdmin.Common.Result;
+using layUiAdmin.Controllers.Argument;
 using layUiAdmin.Result;
 using layUiAdmin.SQL.Entities;
 using layUiAdmin.SQL.Repository;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -66,6 +66,13 @@ namespace layUiAdmin.Dispatchs
             LayuiDataRepository layuiDataRepository = new LayuiDataRepository();
             result.data = await layuiDataRepository.GetListReload(arguPage.page,arguPage.limit);
             return result;
+        }
+
+        //修改签名
+        public async Task<ReturnCode> ModifySign(ArguModifySignColumn arguModifySignColumn)
+        {
+            LayuiDataRepository layuiDataRepository = new LayuiDataRepository();
+            return await layuiDataRepository.UpdateSign(arguModifySignColumn.id,arguModifySignColumn.sign);
         }
     }
 }

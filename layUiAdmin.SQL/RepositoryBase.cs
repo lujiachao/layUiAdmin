@@ -64,11 +64,11 @@ namespace layUiAdmin.SQL.Repository
             }
         }
 
-        public async Task Update(T entity, string updateSql)
+        public async Task<int> Update(T entity, string updateSql)
         {
             using (MySqlConnection conn = DataBaseConfig.GetSqlConnection())
             {
-                await conn.ExecuteAsync(updateSql, entity);
+                return await conn.ExecuteAsync(updateSql, entity);
             }
         }
 

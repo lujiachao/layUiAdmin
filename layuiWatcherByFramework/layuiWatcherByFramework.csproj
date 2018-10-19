@@ -205,6 +205,9 @@
     <Content Include="layui-master\examples\upload.html" />
     <Content Include="layui-master\examples\util.html" />
     <Content Include="layui-master\examples\xingzuo.html" />
+    <Content Include="layui-master\myTest\cellEvent.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="layui-master\myTest\global\global.js" />
     <Content Include="layui-master\myTest\hm\hm.js" />
     <Content Include="layui-master\myTest\auto.html" />
@@ -213,6 +216,8 @@
     <Content Include="layui-master\myTest\data.html" />
     <Content Include="layui-master\myTest\fixed.html" />
     <Content Include="layui-master\myTest\form.html" />
+    <Content Include="layui-master\myTest\height.html" />
+    <Content Include="layui-master\myTest\initSort.html" />
     <Content Include="layui-master\myTest\onrow.html" />
     <Content Include="layui-master\myTest\operate.html" />
     <Content Include="layui-master\myTest\page.html" />
@@ -312,6 +317,7 @@
     <Content Include="layui-master\src\images\face\71.gif" />
     <Content Include="layui-master\src\images\face\8.gif" />
     <Content Include="layui-master\src\images\face\9.gif" />
+    <Content Include="layui-master\src\layui.all.js" />
     <Content Include="layui-master\src\lay\modules\mobile\layer-mobile.js" />
     <Content Include="layui-master\src\lay\modules\mobile\layim-mobile-open.js" />
     <Content Include="layui-master\src\lay\modules\mobile\upload-mobile.js" />
@@ -343,7 +349,9 @@
     <Content Include="layui-master\test\lay\modules\laydate.js" />
     <Content Include="layui-master\test\lay\modules\laytpl.js" />
     <Content Include="layui-master\test\layui.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="layui-master\dist\font\iconfont.eot" />
     <Content Include="layui-master\dist\font\iconfont.ttf" />
     <Content Include="layui-master\dist\font\iconfont.woff" />
@@ -360,9 +368,11 @@
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <PropertyGroup>

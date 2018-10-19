@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "layuiWatcherByNetCore", "la
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "layuiWatcherByFramework", "layuiWatcherByFramework\layuiWatcherByFramework.csproj", "{3C77D8DD-0B25-4E19-8D2E-32D62D9C270C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "layUiAdmin.Common", "layUiAdmin.Common\layUiAdmin.Common.csproj", "{FA303DD2-C2FF-42DC-A542-B6A3731FE8EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3C77D8DD-0B25-4E19-8D2E-32D62D9C270C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C77D8DD-0B25-4E19-8D2E-32D62D9C270C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C77D8DD-0B25-4E19-8D2E-32D62D9C270C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA303DD2-C2FF-42DC-A542-B6A3731FE8EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA303DD2-C2FF-42DC-A542-B6A3731FE8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA303DD2-C2FF-42DC-A542-B6A3731FE8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA303DD2-C2FF-42DC-A542-B6A3731FE8EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

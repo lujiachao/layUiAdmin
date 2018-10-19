@@ -1,10 +1,9 @@
 ﻿using Dapper;
+using layUiAdmin.Common.Result;
 using layUiAdmin.SQL.Entities;
 using layUiAdmin.SQL.IRepository;
-using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace layUiAdmin.SQL.Repository
@@ -66,6 +65,31 @@ namespace layUiAdmin.SQL.Repository
         {
             string selectSql = @"SELECT Id, UserName, sex, city, sign, experience, logins, wealth, classify, score FROM layuiDataForReload limit " + (page - 1) * limit + "," + limit + "";
             return await Select(selectSql);
+        }
+
+        //修改签名
+        public async Task<ReturnCode> UpdateSign(int Id, string Sign)
+        {
+            LayuiData layuiData = new LayuiData();
+            layuiData.id = Id;
+            layuiData.sign = Sign;
+            string updateSql = @"UPDATE layuidata SET sign = @sign WHERE Id = @id";
+            if (await Update(layuiData, updateSql) <= 0)
+            {
+                return new ReturnCode
+                {
+                    Code = 400,
+                    Message = "未查找到对应数据"
+                };
+            }
+            else
+            {
+                return new ReturnCode
+                {
+                    Code = 200,
+                    Message = "修改数据成功"
+                };
+            }
         }
     }
 }

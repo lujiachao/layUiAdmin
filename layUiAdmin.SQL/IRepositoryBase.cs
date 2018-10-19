@@ -9,7 +9,7 @@ namespace layUiAdmin.SQL
     {
         Task Insert(T entity, string insertSql);
 
-        Task Update(T entity, string updateSql);
+        Task<int> Update(T entity, string updateSql);
 
         Task Delete(int Id, string deleteSql);
 

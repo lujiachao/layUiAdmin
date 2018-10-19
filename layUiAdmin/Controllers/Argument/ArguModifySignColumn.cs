@@ -1,18 +1,19 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace layUiAdmin.Controllers.Argument
 {
-    public class ArguPage
+    public class ArguModifySignColumn
     {
-        public int page
+        public int id
         {
             get; set;
         }
 
-        public int limit
+        public string sign
         {
             get; set;
         }
