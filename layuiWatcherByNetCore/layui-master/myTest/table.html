@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>layout 后台大布局 - Layui</title>
+<link rel="stylesheet" href="../src/css/layui.css">
+<link rel="stylesheet" href="../src/css/global.css">
+<style>
+	body .site-demo-title,
+  body .layui-layout-admin .site-demo{left: 360px}
+  .layui-layout-admin .site-demo-body{top: 107px;}
+</style>
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo">layui 后台布局</div>
+    <!-- 头部区域（可配合layui已有的水平导航） -->
+    <ul class="layui-nav layui-layout-left">
+      <li class="layui-nav-item"><a href="">控制台</a></li>
+      <li class="layui-nav-item"><a href="">商品管理</a></li>
+      <li class="layui-nav-item"><a href="">用户</a></li>
+      <li class="layui-nav-item">
+        <a href="javascript:;">其它系统</a>
+        <dl class="layui-nav-child">
+          <dd><a href="">邮件管理</a></dd>
+          <dd><a href="">消息管理</a></dd>
+          <dd><a href="">授权管理</a></dd>
+        </dl>
+      </li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item">
+        <a href="javascript:;">
+          <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+          贤心
+        </a>
+        <dl class="layui-nav-child">
+          <dd><a href="">基本资料</a></dd>
+          <dd><a href="">安全设置</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item"><a href="">退了</a></li>
+    </ul>
+  </div>
+  
+<div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+      
+<ul class="layui-nav layui-nav-tree site-demo-nav">
+  
+  <li class="layui-nav-item layui-nav-itemed">
+    <a class="javascript:;" href="javascript:;">开发工具</a>
+    <dl class="layui-nav-child">
+      <dd>
+        <a href="/demo/">调试预览</a>
+      </dd>
+    </dl>
+  </li>
+  
+  <li class="layui-nav-item layui-nav-itemed">
+    <a class="javascript:;" href="javascript:;">布局</a>
+    <dl class="layui-nav-child">
+      <dd class="">
+        <a href="/demo/grid.html">栅格</a>
+      </dd>
+      <dd class="">
+        <a href="/demo/admin.html">后台布局</a>
+      </dd>
+    </dl>
+  </li>
+  
+  <li class="layui-nav-item layui-nav-itemed">
+    <a class="javascript:;" href="javascript:;">基本元素</a>
+    <dl class="layui-nav-child">
+      <dd class="">
+        <a href="/demo/button.html">按钮</a>
+      </dd>
+      <dd class="">
+        <a href="/demo/form.html">表单</a>
+      </dd>
+      <dd class="">
+        <a href="/demo/nav.html">导航/面包屑</a>
+      </dd>
+      <dd class="">
+        <a href="/demo/tab.html">选项卡</a>
+      </dd>
+      <dd class="">
+        <a href="/demo/progress.html">进度条</a>
+      </dd>
+      <dd class="">
+        <a href="/demo/panel.html">面板</a>
+      </dd>
+      <dd class="">
+        <a href="/demo/badge.html">徽章</a>
+      </dd>
+      <dd class="">
+        <a href="/demo/timeline.html">时间线</a>
+      </dd>
+      <dd class="">
+        <a href="/demo/table-element.html">静态表格</a>
+      </dd>
+      <dd class="">
+        <a href="/demo/anim.html">动画</a>
+      </dd>
+      <dd class="">
+        <a href="/demo/auxiliar.html">辅助元素</a>
+      </dd>
+    </dl>
+  </li>
+  
+  <li class="layui-nav-item layui-nav-itemed">
+    <a class="javascript:;" href="javascript:;">组件示例</a>
+    <dl class="layui-nav-child">
+      <dd class="">
+        <a href="/demo/layer.html">
+          弹出层
+        </a>
+      </dd>
+      <dd class="">
+        <a href="/demo/laydate.html">
+          日期与时间选择
+        </a>
+      </dd>
+      <dd class="">
+        <a href="/demo/layim.html">
+          即时通讯
+        </a>
+      </dd>
+      <dd class="layui-this">
+        <a href="/demo/table.html">
+          数据表格
+        </a>
+      </dd>
+       <dd class="">
+        <a href="/demo/laypage.html">
+          分页
+        </a>
+      </dd>
+      <dd class="">
+        <a href="/demo/upload.html">
+          文件上传
+        </a>
+      </dd>
+      
+      <dd class="">
+        <a href="/demo/colorpicker.html">
+          颜色选择器
+        </a>
+      </dd>
+      <dd class="">
+        <a href="/demo/slider.html">
+          滑块
+        </a>
+      </dd>
+      <dd class="">
+        <a href="/demo/rate.html">
+          评分
+        </a>
+      </dd>
+      <dd class="">
+        <a href="/demo/carousel.html">
+          轮播
+        </a>
+      </dd>
+      <dd class="">
+        <a href="/demo/laytpl.html">
+          模板引擎
+        </a>
+      </dd>
+      <dd class="">
+        <a href="/demo/flow.html">
+          流加载
+        </a>
+      </dd>
+      <dd class="">
+        <a href="/demo/util.html">
+          工具集
+        </a>
+      </dd>
+      <dd class="">
+        <a href="/demo/code.html">
+          代码修饰器
+        </a>
+      </dd>
+    </dl>
+  </li>
+  
+  <li class="layui-nav-item" style="height: 30px; text-align: center"></li>
+</ul>
+
+    </div>
+  </div>
+  
+<div class="layui-side layui-side-child">
+  <div class="layui-side-scroll">
+    <!-- 左侧子菜单 -->
+    <ul class="layui-nav layui-nav-tree site-demo-table-nav">
+      <li class="layui-nav-item layui-this">
+        <a href="table.html">简单数据表格</a>
+      </li>
+      <li class="layui-nav-item ">
+        <a href="auto.html">列宽自动分配<span class="layui-badge-dot"></span></a>
+      </li>
+      
+      <li class="layui-nav-item ">
+        <a href="data.html">赋值已知数据</a>
+      </li>
+      <li class="layui-nav-item ">
+        <a href="static.html">转化静态表格</a>
+      </li>
+      
+      <hr>
+      <li class="layui-nav-item ">
+        <a href="page.html">开启分页</a>
+      </li>     
+      <li class="layui-nav-item ">
+        <a href="resetPage.html">自定义分页</a>
+      </li>
+      <li class="layui-nav-item ">
+        <a href="toolbar.html">开启头部工具栏<span class="layui-badge-dot"></span></a>
+      </li>
+      <li class="layui-nav-item ">
+        <a href="totalRow.html">开启合计行<span class="layui-badge-dot"></span></a>
+      </li>
+      <li class="layui-nav-item ">
+        <a href="checkbox.html">开启复选框</a>
+      </li>
+      <li class="layui-nav-item ">
+        <a href="radio.html">开启单选框<span class="layui-badge-dot"></span></a>
+      </li>
+      <li class="layui-nav-item ">
+        <a href="cellEdit.html">开启单元格编辑</a>
+      </li>
+      <hr>
+      
+      <li class="layui-nav-item ">
+        <a href="form.html">加入表单元素</a>
+      </li>
+      <li class="layui-nav-item ">
+        <a href="style.html">设置单元格样式</a>
+      </li>
+      <li class="layui-nav-item ">
+        <a href="fixed.html">固定列</a>
+      </li>
+      
+      <hr>
+      <li class="layui-nav-item ">
+        <a href="operate.html">数据操作</a>
+      </li>
+      <li class="layui-nav-item ">
+        <a href="parseData.html">解析任意数据格式<span class="layui-badge-dot"></span></a>
+      </li>
+      <li class="layui-nav-item ">
+        <a href="onrow.html">监听行事件<span class="layui-badge-dot"></span></a>
+      </li>
+      <li class="layui-nav-item ">
+        <a href="reload.html">数据表格的重载</a>
+      </li>
+      <hr>
+      
+      <li class="layui-nav-item ">
+        <a href="height.html">高度最大化适应</a>
+      </li>
+      <li class="layui-nav-item ">
+        <a href="initSort.html">设置初始排序</a>
+      </li>
+      
+      
+      <li class="layui-nav-item ">
+        <a href="cellEvent.html">监听单元格事件</a>
+      </li>
+      
+      <li class="layui-nav-item ">
+        <a href="thead.html">复杂表头</a>
+      </li>
+      
+      <hr>
+      <li class="layui-nav-item">
+        <a href="table.html" target="_blank">更多用法见文档</a>
+      </li>
+    </ul>
+  </div>
+</div>
+  <div class="layui-tab layui-tab-brief site-demo-table" lay-filter="demoTitle"> 
+     <ul class="layui-tab-title site-demo-title">
+     	<li class="layui-this">
+     		预览	
+     	</li>
+     	<li>查看代码</li>
+     	<li>帮助</li>
+     </ul>
+     <div class="layui-body layui-tab-content site-demo site-demo-body">
+      <div class="layui-tab-item layui-show">
+        <div class="layui-main">          
+          <div id="LAY_preview">           
+              <table class="layui-hide" id="test"></table>             
+          </div>         
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="layui-footer footer footer-demo">
+  	<div class="layui-main">
+    <!-- 底部固定区域 -->
+    © layui.com - 底部固定区域
+    </div>
+  </div>
+  <script async src="../src/adsbygoogle.js"></script>
+  <div class="site-tree-mobile layui-hide">
+  	<i class="layui-icon">&#xe602;</i>
+  </div>
+</div>
+  <div class="site-mobile-shade"></div>
+<script src="../src/layui.js"></script>
+<script>
+window.global = {
+  pageType: 'demo'
+  ,preview: function(){
+    var preview = document.getElementById('LAY_preview');
+    return preview ? preview.innerHTML : '';
+  }()
+};
+layui.config({
+  base: 'global/'
+  ,version: '1535898708529'
+}).use('global');
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "hm/hm.js?d214947968792b839fd669a4decaaffc";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<div id="LAY_democodejs">
+<script>
+//JavaScript代码区域
+layui.use('table', function(){
+  var table = layui.table; 
+   table.render({
+    elem: '#test'
+    ,url:'http://192.168.1.180:1314/api/server/getJsonData'
+    ,cellMinWidth: 80 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
+    ,cols: [[
+      {field:'id', width:80, title: 'ID', sort: true}
+      ,{field:'username', width:80, title: '用户名'}
+      ,{field:'sex', width:80, title: '性别', sort: true}
+      ,{field:'city', width:80, title: '城市'}
+      ,{field:'sign', title: '签名', width: '30%', minWidth: 100} //minWidth：局部定义当前单元格的最小宽度，layui 2.2.1 新增
+      ,{field:'experience', title: '积分', sort: true}
+      ,{field:'score', title: '评分', sort: true}
+      ,{field:'classify', title: '职业'}
+      ,{field:'wealth', width:137, title: '财富', sort: true}
+    ]]
+  });
+});
+</script>
+</div>
+</body>
+</html>

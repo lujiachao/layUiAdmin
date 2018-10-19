@@ -9,27 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "layUiAdmin.SQL", "layUiAdmi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataLooper", "DataLooper\DataLooper.csproj", "{7D75BFF1-49D8-4B88-8AE4-55A9DBFF44AB}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "layUiWatcher", "layUiWatcher\", "{56689244-25DF-4858-8029-C2F7A7F579D1}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_63976"
-		Debug.AspNetCompiler.PhysicalPath = "layUiWatcher\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63976\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_63976"
-		Release.AspNetCompiler.PhysicalPath = "layUiWatcher\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63976\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "63976"
-		SlnRelativePath = "layUiWatcher\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "layuiWatcherByNetCore", "layuiWatcherByNetCore\layuiWatcherByNetCore.csproj", "{30F57793-2128-4AF5-9AC4-6C411C0403F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,10 +29,10 @@ Global
 		{7D75BFF1-49D8-4B88-8AE4-55A9DBFF44AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D75BFF1-49D8-4B88-8AE4-55A9DBFF44AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D75BFF1-49D8-4B88-8AE4-55A9DBFF44AB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{56689244-25DF-4858-8029-C2F7A7F579D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{56689244-25DF-4858-8029-C2F7A7F579D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{56689244-25DF-4858-8029-C2F7A7F579D1}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{56689244-25DF-4858-8029-C2F7A7F579D1}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{30F57793-2128-4AF5-9AC4-6C411C0403F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30F57793-2128-4AF5-9AC4-6C411C0403F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30F57793-2128-4AF5-9AC4-6C411C0403F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30F57793-2128-4AF5-9AC4-6C411C0403F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
