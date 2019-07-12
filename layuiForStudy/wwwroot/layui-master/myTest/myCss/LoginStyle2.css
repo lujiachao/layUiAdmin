@@ -1,0 +1,77 @@
+﻿.container {
+    width: 420px;
+    height: 320px;
+    min-height: 320px;
+    max-height: 320px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 20px;
+    z-index: 130;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 3px 18px rgba(100, 0, 0, .5);
+    font-size: 16px;
+}
+
+.close {
+    background-color: white;
+    border: none;
+    font-size: 18px;
+    margin-left: 410px;
+    margin-top: -10px;
+    float :left;
+}
+
+.layui-input {
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.layui-form-item {
+    margin-left: -20px;
+}
+
+#logoid {
+    margin-top: -16px;
+    padding-left: 150px;
+    padding-bottom: 15px;
+}
+
+.layui-btn {
+    margin-left: -50px;
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.verity {
+    width: 120px;
+}
+
+.font-set {
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 120px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.layui-form-span {
+    font: 100 30px "Comic Sans MS";
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 5px 5px 5px #FF0000;
+}
+.layui-word-aux {
+    text-align: center;
+}
