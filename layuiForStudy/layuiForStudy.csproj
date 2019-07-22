@@ -286,6 +286,22 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\layui-admin\lib\layui\font\iconfont.svg" />
+    <None Include="wwwroot\layui-admin\lib\layui\layui.js" />
+    <None Include="wwwroot\layui-admin\lib\layui\lay\all.js" />
+    <None Include="wwwroot\layui-admin\lib\layui\lay\lib\jquery.js" />
+    <None Include="wwwroot\layui-admin\lib\layui\lay\modules\code.js" />
+    <None Include="wwwroot\layui-admin\lib\layui\lay\modules\element.js" />
+    <None Include="wwwroot\layui-admin\lib\layui\lay\modules\flow.js" />
+    <None Include="wwwroot\layui-admin\lib\layui\lay\modules\form.js" />
+    <None Include="wwwroot\layui-admin\lib\layui\lay\modules\laydate.js" />
+    <None Include="wwwroot\layui-admin\lib\layui\lay\modules\layedit.js" />
+    <None Include="wwwroot\layui-admin\lib\layui\lay\modules\layer.js" />
+    <None Include="wwwroot\layui-admin\lib\layui\lay\modules\laypage.js" />
+    <None Include="wwwroot\layui-admin\lib\layui\lay\modules\laytpl.js" />
+    <None Include="wwwroot\layui-admin\lib\layui\lay\modules\tree.js" />
+    <None Include="wwwroot\layui-admin\lib\layui\lay\modules\upload.js" />
+    <None Include="wwwroot\layui-admin\lib\layui\lay\modules\util.js" />
     <None Include="wwwroot\layui-master\dist\css\layui.css" />
     <None Include="wwwroot\layui-master\dist\css\layui.mobile.css" />
     <None Include="wwwroot\layui-master\dist\css\modules\code.css" />
